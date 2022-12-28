@@ -8,5 +8,9 @@ WORKDIR /app
 COPY . /app
 RUN composer install
 
+ENV APP_ENV=local
+ENV APP_DEBUG=true
+
+CMD php artisan key:generate
 CMD php artisan serve --host=0.0.0.0 --port=80
 EXPOSE 80
