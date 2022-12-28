@@ -10,7 +10,7 @@ modules:
       - mountPath: "/var/www/"
     ports:
       - alias: "http"
-        portNumber: 8181
+        portNumber: 80
     functions:
       - name: entry
         description: the entry point for the function
