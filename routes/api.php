@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/version', function () {
     return response()->json([
         'status' => true,
-        'data' => 'Test API v1.0.0'
+        'data' => 'Test API v1.0.1'
     ], 200);
 });
 
